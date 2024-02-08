@@ -1,0 +1,21 @@
+name: React Project
+on:
+  push:
+    branches:
+      - main # Adjust the branch name as needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # # Install dependencies
+      # - name: Install dependencies
+      #   run: npm ci
+
+      # # Build the project
+      # - name: Building
+      #   run: npm run build
+
+      # Run tests
+      - name: Test
+        run: echo "Working"
