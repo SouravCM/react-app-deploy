@@ -1,6 +1,8 @@
 name: React Project
 on:
   push:
+    branches:
+      - main # Specify the branch name here
   workflow_dispatch:
 jobs:
   deploy:
