@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: "14" # Specify the desired Node.js
+          node-version: "14" # Specify the desired Node.js versio
 
       - name: Install dependencies
         run: |
@@ -24,6 +24,6 @@ jobs:
         run: |
           CI=false npm run build
 
-      - name: Test
+      - name: Move Build
         run: |
-          echo "Testing..."
+          mv /home/actions-runner/_work/react-app-deploy/react-app-deploy/build /home/rmlapp
