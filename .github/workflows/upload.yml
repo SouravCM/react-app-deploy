@@ -22,6 +22,6 @@ jobs:
         run: |
           CI=false npm run build
 
-      - name: Test
+      - name: Move Build
         run: |
-          echo "Testing..."
+          mv /home/actions-runner/_work/react-app-deploy/react-app-deploy/build /home/rmlapp
