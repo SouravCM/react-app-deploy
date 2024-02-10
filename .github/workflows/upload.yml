@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: "14" # Specify the desired Node.js Hi
+          node-version: "14" # Specify the desired Node.js Hi Yo
 
       - name: Install dependencies
         run: |
