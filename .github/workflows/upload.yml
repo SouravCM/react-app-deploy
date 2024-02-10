@@ -27,3 +27,19 @@ jobs:
       - name: Move Build
         run: |
           mv /home/actions-runner/_work/react-app-deploy/react-app-deploy/build /home/rmlapp
+
+      - name: Delete Build from main
+        run: |
+          rm -rf /home/rmlapp/build/*
+
+      - name: Delete Build from backup
+        run: |
+          rm -rf /home/actions-runner/build_backup/build/*
+
+      - name: Move Build from main to backup
+        run: |
+          mv /home/rmlapp/build /home/actions-runner/build_backup
+
+      - name: Move Build
+        run: |
+          mv /home/actions-runner/_work/react-app-deploy/react-app-deploy/build /home/rmlapp
